@@ -2,13 +2,13 @@
     display: grid;
     place-content: center;
     min-height: 20vh;
-    background-color: white;
 }
 
 .title{
     text-align: center;
     font-size: 40px;
     margin-top: 20px;
+    color: white;
 }
 
 .switch{

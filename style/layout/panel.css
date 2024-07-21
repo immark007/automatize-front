@@ -1,0 +1,53 @@
+.components{
+    display: grid;
+    place-content: center;
+    min-height: 30vh;
+}
+
+.control{
+    display: grid;
+    grid-template-columns: repeat(3,7rem);
+    padding: 1.5rem;
+    width: 350px;
+    background-color: #222;
+    border-radius: 1rem;
+    gap: 20%;
+}
+
+label{
+    display: grid;
+    place-content: center;
+    color: white;
+    width: 5.7rem;
+    height: 5.7rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #333;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+label:hover i{
+    font-size: 2.5rem;
+    animation: spin 0.5s linear;
+}
+
+@keyframes spin {
+    to{
+        transform:  rotateY(360deg);
+    }
+}
+
+
+input:checked ~ label{
+    background-color: #8aff00;
+    color: #111;
+}
+
+.text2{
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    margin: 0 20px;
+    font-size: 20px;
+}
